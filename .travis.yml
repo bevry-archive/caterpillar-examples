@@ -1,0 +1,31 @@
+# 2016 April 27
+# https://github.com/bevry/base
+
+# Use the latest travis infrastructure
+sudo: false
+
+# We use node
+language: node_js
+node_js:
+  - "0.12"
+  - "4"
+  - "5"
+  - "6"
+cache:
+  directories:
+    - node_modules
+
+# Prepare our tests
+# Ensure the project is setup correctly and compiled
+install: "npm run-script setup"
+
+# Run our tests
+script: "npm test"
+
+# Custom notifications
+notifications:
+  slack:
+    secure: gfDlqFjqH9vnI/Hc6gDazccIhPrLyJLFfMqq6McdbKDJMmhCsYf2iLVBs/0Wh0N4URAVkGO3Iv0TSCZ4IwqXhVDyS68MYQWCjxwebT72eTJuAyukG8fpVVA+6/ISPOC6kubbKXgb+jVd1NDModIiDI7yrP9kOlV/ocyPoxhsaN4OL/DdsW3+eRow7kJFYVuf7UsAo7Z1VvWhtedICM3WJ0Y/RZQTZONKPW20NItKpB2o0U+XmZEtIMgPGZZnVqJZ+jZ97lSQcVq1Ctp0fAFBue4Yhlhfhvgq9YvGR+dalc1RRJi4Oa9UWOTmFahbmAk+NdFe28CaqsZa3njllNI9a/DB4TupIiAxE4MpRRFWxWrwMgZgdOozo24JFHzr3bjaCC/o+wo38pRJKVRFPD0yp10mGUcRnhSWKeYY1Da04r1CmbudsMSX00evCmj6QYO4FO9E1h5o9TTq5GOk/PTo9ngSLZGf/nZMfhHPNmVqRlHI63ZvzKaTE5EEw7cYJc3Stb1G6rtLYbkn4rF3tqljSom1APllyt45RJelMu1x0fAWulqvKnhGQz70Z6B5+RP1IInYdgR1XXHZPYXRZEkauhcNcA0QJCTdSZaB8CmPVOeb9UiLXFCXgGplcENumBfUphmwDwsZFRpNZSdjSXBJliXCFqSSvQXpksB0w1DgCxU=
+  email:
+    recipients:
+      secure: R4YM6dVbX4OhLDDC1opxrrtRWpsHW4Iw801lPZ82r4NXdOyYJAD7JSUqw2A6GXiWAwa4PxbqgYWR7Q8orn2hfBBvQHC/Et6nbLg5OM/Pu8rXyqNyUmffK1NzZhGwJ+2ajyE6peyb34y0HdTuHEbIZ4Uzdk/UgaJbdct9uxvbxCaYPrxvkbwQsAxmZTViDk1gdou4uObL9IQbOu+u52Rz9xkV9bGZVNxyhcMIiBHwFO33e7dYSqEKDskVpFrxW/I1ks2N1UrZ/sHt/+ZKr87L7efJ6MESrlitf3w9cjNRp4M3Fo0JIlh6Okiy+4ELFTtM1oi/BH1WLLaIs/WdMjQ3xI465lHXzXbHIJPDT9RlLvEiw8gZFCH3whjTpZjyPdhAizMs4LLqw5cHzkqoE2v31nsenIRV8lhZ9qrOCiacmew9tbQvlvkwg1TNz5Ev4QpyYH5YsGTUculG/Ye40hjil6YJqCVBereXdYHRqfSHX+y5B9b/99g8No4p6/gs3fy8Vxj/rReSLuOpJG6Lyk755DBEYBk7FeoJB8xiQK8ZdU699qn0HZyHH2EDDWATceHNKVV//LH6V05gyzbH/tZisqlEvQ7Oai7ztSHfrV8uNw0FzqZXyRxbBr7e9hM5X6xKGfWawMVD1XY2g7eKfs1TcjDfeSoyPJPBMePe9G4FtqI=

@@ -1,0 +1,68 @@
+{
+  "name": "caterpillar-example",
+  "version": "1.0.0",
+  "perferGlobal": true,
+  "description": "Examples of different ways Caterpillar can be used",
+  "homepage": "https://github.com/bevry/caterpillar-examples",
+  "license": "MIT",
+  "badges": {
+    "list": [
+      "daviddm",
+      "daviddmdev",
+      "---",
+      "slackin",
+      "patreon",
+      "gratipay",
+      "flattr",
+      "paypal",
+      "bitcoin",
+      "wishlist"
+    ],
+    "config": {
+      "patreonUsername": "bevry",
+      "gratipayUsername": "bevry",
+      "flattrUsername": "balupton",
+      "paypalURL": "https://bevry.me/paypal",
+      "bitcoinURL": "https://bevry.me/bitcoin",
+      "wishlistURL": "https://bevry.me/wishlist",
+      "slackinURL": "https://slack.bevry.me"
+    }
+  },
+  "author": "2016+ Bevry Pty Ltd <us@bevry.me> (https://bevry.me)",
+  "maintainers": [
+    "Benjamin Lupton <b@lupton.cc> (https://github.com/balupton)"
+  ],
+  "contributors": [
+    "Benjamin Lupton <b@lupton.cc> (https://github.com/balupton)"
+  ],
+  "bugs": {
+    "url": "https://github.com/bevry/caterpillar-examples/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bevry/caterpillar-examples.git"
+  },
+  "main": "index.js",
+  "bin": "bin.js",
+  "scripts": {
+    "setup": "npm install",
+    "meta": "npm run meta:projectz",
+    "meta:projectz": "projectz compile",
+    "prepare": "npm test && npm run meta",
+    "release": "npm run prepare && npm run release:publish && npm run release:tag && npm run release:push",
+    "release:publish": "npm publish",
+    "release:tag": "git tag v$npm_package_version -a",
+    "release:push": "git push origin master && git push origin --tags",
+    "start": "node run test",
+    "test": "node ./index.js && node ./index.js -d"
+  },
+  "dependencies": {
+    "caterpillar": "^2.0.9",
+    "caterpillar-browser": "^2.0.1",
+    "caterpillar-filter": "^2.0.3",
+    "caterpillar-human": "^2.1.2"
+  },
+  "devDependencies": {
+    "projectz": "^1.1.4"
+  }
+}
