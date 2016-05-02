@@ -30,6 +30,7 @@ Examples of different ways Caterpillar can be used.
 
 [Caterpillar.](http://github.com/bevry/caterpillar)
 
+
 ## Usage
 
 [Script.](https://github.com/bevry/caterpillar-examples/blob/master/index.js)
@@ -37,6 +38,8 @@ Examples of different ways Caterpillar can be used.
 ![Running with No Flags](http://rawgit.com/bevry/caterpillar-examples/master/screenshots/no-flags.png)
 
 ![Running with Debug Flag](http://rawgit.com/bevry/caterpillar-examples/master/screenshots/debug-flag.png)
+
+![Running in the Web Browser](http://rawgit.com/bevry/caterpillar-examples/master/screenshots/web.png)
 
 
 ### Try it using the npm package
@@ -75,6 +78,13 @@ Run our script that uses caterpillar:
 ```
 node index.js
 node index.js -d
+```
+
+Run it in the web browser:
+
+```
+npm run compile
+open index.html
 ```
 
 <!-- HISTORY/ -->
