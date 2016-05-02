@@ -1,6 +1,6 @@
 <!-- TITLE/ -->
 
-<h1>caterpillar-example</h1>
+<h1>Caterpillar Examples</h1>
 
 <!-- /TITLE -->
 
@@ -23,10 +23,12 @@
 
 <!-- DESCRIPTION/ -->
 
-Examples of different ways Caterpillar can be used
+Examples of different ways Caterpillar can be used.
 
 <!-- /DESCRIPTION -->
 
+
+[Caterpillar.](http://github.com/bevry/caterpillar)
 
 ## Usage
 
@@ -101,7 +103,7 @@ node index.js -d
 
 These amazing people are maintaining this project:
 
-<ul><li><a href="https://github.com/balupton">Benjamin Lupton</a> — <a href="https://github.com/bevry/caterpillar-examples/commits?author=balupton" title="View the GitHub contributions of Benjamin Lupton on repository bevry/caterpillar-examples">view contributions</a></li></ul>
+<ul><li><a href="https://balupton.com">Benjamin Lupton</a> — <a href="https://github.com/bevry/caterpillar-examples/commits?author=balupton" title="View the GitHub contributions of Benjamin Lupton on repository bevry/caterpillar-examples">view contributions</a></li></ul>
 
 <h3>Sponsors</h3>
 
@@ -118,7 +120,7 @@ No sponsors yet! Will you be the first?
 
 These amazing people have contributed code to this project:
 
-<ul><li><a href="https://github.com/balupton">Benjamin Lupton</a> — <a href="https://github.com/bevry/caterpillar-examples/commits?author=balupton" title="View the GitHub contributions of Benjamin Lupton on repository bevry/caterpillar-examples">view contributions</a></li></ul>
+<ul><li><a href="https://balupton.com">Benjamin Lupton</a> — <a href="https://github.com/bevry/caterpillar-examples/commits?author=balupton" title="View the GitHub contributions of Benjamin Lupton on repository bevry/caterpillar-examples">view contributions</a></li></ul>
 
 <a href="https://github.com/bevry/caterpillar-examples/blob/master/CONTRIBUTING.md#files">Discover how you can contribute by heading on over to the <code>CONTRIBUTING.md</code> file.</a>
 

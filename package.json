@@ -1,8 +1,9 @@
 {
-  "name": "caterpillar-example",
+  "name": "caterpillar-examples",
+  "title": "Caterpillar Examples",
   "version": "1.0.0",
   "perferGlobal": true,
-  "description": "Examples of different ways Caterpillar can be used",
+  "description": "Examples of different ways Caterpillar can be used.",
   "homepage": "https://github.com/bevry/caterpillar-examples",
   "license": "MIT",
   "badges": {
@@ -30,10 +31,10 @@
   },
   "author": "2016+ Bevry Pty Ltd <us@bevry.me> (https://bevry.me)",
   "maintainers": [
-    "Benjamin Lupton <b@lupton.cc> (https://github.com/balupton)"
+    "Benjamin Lupton <b@lupton.cc> (https://balupton.com)"
   ],
   "contributors": [
-    "Benjamin Lupton <b@lupton.cc> (https://github.com/balupton)"
+    "Benjamin Lupton <b@lupton.cc> (https://balupton.com)"
   ],
   "bugs": {
     "url": "https://github.com/bevry/caterpillar-examples/issues"
