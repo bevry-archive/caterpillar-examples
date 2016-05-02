@@ -2,7 +2,7 @@
 const level = process.argv.indexOf('-d') === -1 ? 6 : 7
 
 // Caterpillar Logger: https://github.com/bevry/caterpillar
-const logger = require('caterpillar').createLogger({level})
+const logger = require('caterpillar').createLogger({level: level})
 
 // Filter transform: https://github.com/bevry/caterpillar-filter
 const filter = require('caterpillar-filter').createFilter()
