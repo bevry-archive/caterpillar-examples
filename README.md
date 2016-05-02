@@ -41,7 +41,7 @@ Examples of different ways Caterpillar can be used.
 
 ![Running in the Web Browser](http://rawgit.com/bevry/caterpillar-examples/master/screenshots/web.png)
 
-![Try it in the Web Browser](http://rawgit.com/bevry/caterpillar-examples/master/index.html)
+[Try it in the Web Browser](http://rawgit.com/bevry/caterpillar-examples/master/index.html)
 
 
 ### Try it using the npm package
