@@ -2,19 +2,19 @@
 const level = process.argv.indexOf('-d') === -1 ? 6 : 7
 
 // Caterpillar Logger: https://github.com/bevry/caterpillar
-const logger = require('caterpillar').createLogger({level: level})
+const logger = require('caterpillar').create({level: level})
 
 // Filter transform: https://github.com/bevry/caterpillar-filter
-const filter = require('caterpillar-filter').createFilter()
+const filter = require('caterpillar-filter').create()
 
 // Human transform: https://github.com/bevry/caterpillar-human
-const human = require('caterpillar-human').createHuman()
+const human = require('caterpillar-human').create()
 
 // Where to output?
 if ( process.title === 'browser' ) {
 	// Include the browser compatibility layer
 	// Browser transform: https://github.com/bevry/caterpillar-browser
-	const browser = require('caterpillar-browser').createBrowser()
+	const browser = require('caterpillar-browser').create()
 
 	// Pipe to filter to human to browser
 	logger.pipe(filter).pipe(human).pipe(browser)

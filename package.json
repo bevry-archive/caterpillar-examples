@@ -1,7 +1,7 @@
 {
   "name": "caterpillar-examples",
   "title": "Caterpillar Examples",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "perferGlobal": true,
   "description": "Examples of different ways Caterpillar can be used.",
   "homepage": "https://github.com/bevry/caterpillar-examples",
@@ -43,11 +43,10 @@
     "type": "git",
     "url": "git+https://github.com/bevry/caterpillar-examples.git"
   },
-  "main": "index.js",
   "bin": "bin.js",
   "scripts": {
     "setup": "npm install",
-    "compile": "browserify ./index.js -o ./web.js",
+    "compile": "browserify ./all.js -o ./web.js",
     "meta": "npm run meta:projectz",
     "meta:projectz": "projectz compile",
     "prepare": "npm run compile && npm test && npm run meta",
@@ -56,13 +55,13 @@
     "release:tag": "git tag v$npm_package_version -a",
     "release:push": "git push origin master && git push origin --tags",
     "start": "node run test",
-    "test": "node ./index.js && node ./index.js -d"
+    "test": "node ./bin.js && node ./bin.js -d"
   },
   "dependencies": {
-    "caterpillar": "^2.0.9",
-    "caterpillar-browser": "^2.0.1",
-    "caterpillar-filter": "^2.0.3",
-    "caterpillar-human": "^2.1.2"
+    "caterpillar": "^3.0.0",
+    "caterpillar-browser": "^3.0.0",
+    "caterpillar-filter": "^3.0.0",
+    "caterpillar-human": "^3.0.0"
   },
   "devDependencies": {
     "browserify": "^13.0.0",
