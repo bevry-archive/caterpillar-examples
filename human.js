@@ -6,7 +6,7 @@ const human = require('caterpillar-human').create()
 logger.pipe(human).pipe(process.stdout)
 
 // Log
-logger.log('warn',  'this is the first log entry')
+logger.log('warn', 'this is the first log entry')
 logger.log('info', 'this is the second log entry')
 
 // Wait
