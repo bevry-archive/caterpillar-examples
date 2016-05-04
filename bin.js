@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-const {join} = require('path')
+const join = require('path').join
 ;['all.js', 'filter.js', 'human.js'].forEach(function (file) {
 	const path = join(__dirname, file)
 	const url = `https://github.com/bevry/caterpillar-examples/blob/master/${file}`
