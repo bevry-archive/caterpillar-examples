@@ -56,7 +56,6 @@ Run the example script:
 
 ```
 caterpillar-examples
-caterpillar-examples -d
 ```
 
 
@@ -78,8 +77,7 @@ npm install
 Run our script that uses caterpillar:
 
 ```
-node index.js
-node index.js -d
+npm run start
 ```
 
 Run it in the web browser:
