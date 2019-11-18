@@ -59,7 +59,7 @@
   },
   "dependencies": {
     "caterpillar": "^3.0.0",
-    "caterpillar-browser": "^3.0.0",
+    "caterpillar-browser": "^4.0.0",
     "caterpillar-filter": "^3.0.0",
     "caterpillar-human": "^3.0.0"
   },
