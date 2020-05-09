@@ -1,7 +1,13 @@
 # History
 
+## v3.0.0 2020 May 9
+
+-   Updated for typescript, esm, and pika
+
 ## v2.0.0 2016 May 4
-- Example for Caterpillar v3
+
+-   Example for Caterpillar v3
 
 ## v1.0.0 2016 May 3
-- Example for Caterpillar v2
+
+-   Example for Caterpillar v2

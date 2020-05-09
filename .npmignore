@@ -21,27 +21,45 @@
 
 # Build Caches
 build/
+components/
 bower_components/
 node_modules/
-.next/
 .pnp/
 .pnp.js
 
-# -------------------------------------
-# CDN Inclusions, Git Exclusions
+# Ecosystem Files
+.dependabout
+.github
 
-# Build Outputs
-**/out.*
-**/*.out.*
-**/out/
-**/output/
-edition*/
-coffeejs/
-coffee/
-es5/
-es2015/
-esnext/
+# -------------------------------------
+# CDN Inclusions, Package Exclusions
+
+# Documentation Files
 docs/
+guides/
+BACKERS.md
+CONTRIBUTING.md
+HISTORY.md
+
+# Development Files
+web/
+**/example*
+**/test*
+.babelrc*
+.editorconfig
+.eslintrc*
+.jshintrc
+.jscrc
+coffeelint*
+.travis*
+nakefile*
+Cakefile
+Makefile
+
+# Other Package Definitions
+template.js
+component.json
+bower.json
 
 # =====================================
 # CUSTOM
