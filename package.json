@@ -49,7 +49,8 @@
       "githubUsername": "bevry",
       "githubRepository": "caterpillar-examples",
       "githubSlug": "bevry/caterpillar-examples",
-      "npmPackageName": "caterpillar-examples"
+      "npmPackageName": "caterpillar-examples",
+      "travisTLD": "com"
     }
   },
   "funding": "https://bevry.me/fund",
