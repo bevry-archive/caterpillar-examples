@@ -1,16 +1,13 @@
 {
   "title": "Caterpillar Examples",
   "name": "caterpillar-examples",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "Examples of different ways [Caterpillar](http://github.com/bevry/caterpillar) can be used.",
   "homepage": "https://github.com/bevry/caterpillar-examples",
   "license": "MIT",
   "keywords": [
     "browser",
     "caterpillar",
-    "es2018",
-    "es2019",
-    "es2020",
     "examples",
     "module",
     "node",
@@ -46,11 +43,11 @@
       "patreonUsername": "bevry",
       "paypalURL": "https://bevry.me/paypal",
       "wishlistURL": "https://bevry.me/wishlist",
+      "travisTLD": "com",
       "githubUsername": "bevry",
       "githubRepository": "caterpillar-examples",
       "githubSlug": "bevry/caterpillar-examples",
-      "npmPackageName": "caterpillar-examples",
-      "travisTLD": "com"
+      "npmPackageName": "caterpillar-examples"
     }
   },
   "funding": "https://bevry.me/fund",
@@ -83,6 +80,20 @@
       "engines": false
     },
     {
+      "description": "TypeScript compiled against ESNext for Node.js with Import for modules",
+      "directory": "edition-esnext",
+      "entry": "index.js",
+      "tags": [
+        "javascript",
+        "esnext",
+        "import"
+      ],
+      "engines": {
+        "node": "14",
+        "browsers": false
+      }
+    },
+    {
       "description": "TypeScript compiled against ES2019 for web browsers with Import for modules",
       "directory": "edition-browsers",
       "entry": "all.js",
@@ -94,34 +105,19 @@
         "node": false,
         "browsers": "defaults"
       }
-    },
-    {
-      "description": "TypeScript compiled against ES2019 for Node.js with Import for modules",
-      "directory": "edition-es2019",
-      "entry": "index.js",
-      "tags": [
-        "javascript",
-        "es2019",
-        "import"
-      ],
-      "engines": {
-        "node": true,
-        "browsers": false
-      }
     }
   ],
-  "bin": "edition-es2019/bin.js",
+  "bin": "bin.js",
   "types": "source/index.ts",
   "type": "module",
-  "main": "index.js",
+  "main": "edition-esnext/index.js",
   "browser": "edition-browsers/all.js",
   "module": "edition-browsers/all.js",
   "dependencies": {
     "caterpillar": "^5.1.2",
     "caterpillar-browser": "^6.0.0",
     "caterpillar-filter": "^6.0.0",
-    "caterpillar-human": "^6.0.0",
-    "editions": "^2.3.0"
+    "caterpillar-human": "^6.0.0"
   },
   "devDependencies": {
     "@bevry/update-contributors": "^1.1.0",
@@ -141,21 +137,11 @@
     "valid-directory": "^1.6.0",
     "valid-module": "^1.0.0"
   },
-  "eslintConfig": {
-    "extends": [
-      "bevry"
-    ]
-  },
-  "prettier": {
-    "semi": false,
-    "singleQuote": true
-  },
-  "perferGlobal": true,
   "scripts": {
     "our:clean": "rm -Rf ./docs ./edition* ./es2015 ./es5 ./out ./.next",
-    "our:compile": "npm run our:compile:edition-browsers && npm run our:compile:edition-es2019",
+    "our:compile": "npm run our:compile:edition-browsers && npm run our:compile:edition-esnext",
     "our:compile:edition-browsers": "tsc --module ESNext --target ES2019 --outDir ./edition-browsers --project tsconfig.json && test -d edition-browsers/source && ( mv edition-browsers/source edition-temp && rm -Rf edition-browsers && mv edition-temp edition-browsers ) || true",
-    "our:compile:edition-es2019": "tsc --module ESNext --target ES2019 --outDir ./edition-es2019 --project tsconfig.json && test -d edition-es2019/source && ( mv edition-es2019/source edition-temp && rm -Rf edition-es2019 && mv edition-temp edition-es2019 ) || true",
+    "our:compile:edition-esnext": "tsc --module ESNext --target ESNext --outDir ./edition-esnext --project tsconfig.json && test -d edition-esnext/source && ( mv edition-esnext/source edition-temp && rm -Rf edition-esnext && mv edition-temp edition-esnext ) || true",
     "our:deploy": "echo no need for this project",
     "our:meta": "npm run our:meta:contributors && npm run our:meta:docs && npm run our:meta:projectz",
     "our:meta:contributors": "npx @bevry/update-contributors",
@@ -177,6 +163,16 @@
     "our:verify:module": "npx valid-module",
     "our:verify:prettier": "prettier --write .",
     "our:verify:typescript": "tsc --noEmit --project tsconfig.json",
-    "test": "node ./edition-es2019/test.js"
-  }
+    "test": "node ./edition-esnext/test.js"
+  },
+  "eslintConfig": {
+    "extends": [
+      "bevry"
+    ]
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true
+  },
+  "perferGlobal": true
 }
