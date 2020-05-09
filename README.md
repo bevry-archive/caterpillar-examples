@@ -64,7 +64,7 @@ git clone https://github.com/bevry/caterpillar-examples.git
 cd caterpillar-examples
 ```
 
-Install the dependencies:
+Prepare the project:
 
 ```
 npm run our:setup
