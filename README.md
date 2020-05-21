@@ -4,6 +4,7 @@
 
 <!-- /TITLE -->
 
+
 <!-- BADGES/ -->
 
 <span class="badge-travisci"><a href="http://travis-ci.com/bevry/caterpillar-examples" title="Check this project's build status on TravisCI"><img src="https://img.shields.io/travis/com/bevry/caterpillar-examples/master.svg" alt="Travis CI Build Status" /></a></span>
@@ -24,11 +25,13 @@
 
 <!-- /BADGES -->
 
+
 <!-- DESCRIPTION/ -->
 
 Examples of different ways [Caterpillar](http://github.com/bevry/caterpillar) can be used.
 
 <!-- /DESCRIPTION -->
+
 
 ## Usage
 
@@ -82,6 +85,7 @@ npx .
 
 <!-- /HISTORY -->
 
+
 <!-- CONTRIBUTE/ -->
 
 <h2>Contribute</h2>
@@ -89,6 +93,7 @@ npx .
 <a href="https://github.com/bevry/caterpillar-examples/blob/master/CONTRIBUTING.md#files">Discover how you can contribute by heading on over to the <code>CONTRIBUTING.md</code> file.</a>
 
 <!-- /CONTRIBUTE -->
+
 
 <!-- BACKERS/ -->
 
@@ -123,6 +128,7 @@ These amazing people have contributed code to this project:
 <a href="https://github.com/bevry/caterpillar-examples/blob/master/CONTRIBUTING.md#files">Discover how you can contribute by heading on over to the <code>CONTRIBUTING.md</code> file.</a>
 
 <!-- /BACKERS -->
+
 
 <!-- LICENSE/ -->
 
